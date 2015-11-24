@@ -1,0 +1,52 @@
+{% extends 'home.html' %}
+
+{% block main %}
+
+  <form action="{{ url_for('add_item', bucket_id=bucket_id) }}" method="post">
+
+    <input type="text" name="name">
+
+  </form>
+
+{#<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">#}
+{#    <strong>Normal Text Box:</strong><br>#}
+{#    <input type="text" size="20" name="input1" value="uploads"><p>#}
+{#    <input type="hidden" name="bucket_id" value="{{bucket_id}}"/>#}
+{#    <strong>Select Box:</strong><br>#}
+{#    <select name="selectbox">#}
+{#        <option value="abc">ABC</option>#}
+{#        <option value="xyz">XYZ</option>#}
+{#    </select><p>#}
+{##}
+{#    <strong>Checkbox:</strong><br>#}
+{#    <input type="checkbox" name="checkbox" value="on" checked> On<p>#}
+{##}
+{#    <strong>Radio:</strong><br>#}
+{#    <input type="radio" name="radio" value="yes" checked> Yes#}
+{#    <input type="radio" name="radio" value="no"> No<p>#}
+{##}
+{#    <strong>Text Area:</strong><br>#}
+{#    <textarea rows="4" cols="40" name="textarea">Text area contents.</textarea><p>#}
+{##}
+{#    <strong>Files:</strong><br>#}
+{#    Select files OR drag them into the box below.#}
+{#    <input id="file-picker" type="file" name="file" accept="image/*" multiple><p>#}
+{##}
+{#    <div id="dropbox">#}
+{#        Drag and Drop Files Here#}
+{#    </div><p>#}
+{##}
+{#    <fieldset id="progress" style="display: none">#}
+{#        <legend>Files Progress</legend>#}
+{##}
+{#        <div class="progress-trough">#}
+{#            <div id="progress-bar" class="progress-bar">0%</div>#}
+{#        </div>#}
+{#    </fieldset><p>#}
+{##}
+{#    <input type="submit" value="Upload!" id="upload-button">#}
+{#</form>#}
+{##}
+{#<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>#}
+{#<script type="text/javascript" src="{{ url_for('static', filename='js/uploadr.js') }}"></script>#}
+{% endblock %}

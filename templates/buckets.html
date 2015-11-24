@@ -1,0 +1,3 @@
+{% for b in buckets %}
+	<a href="{{ url_for('show_bucket', bucket_id=b.uuid) }}">{{b.name}}</a>
+{% endfor %}

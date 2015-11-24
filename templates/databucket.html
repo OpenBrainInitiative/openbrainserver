@@ -1,0 +1,10 @@
+<div id="json">{{ bucket_json }}</div>
+<table id="datatable" width="100%">
+	
+</table>
+<a href="{{ url_for('add_item', bucket_id=bucket.id) }}">Add Item</a>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<style type="text/css" src="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"></style>
+<script src="/static/js/jsontable.js"></script>
